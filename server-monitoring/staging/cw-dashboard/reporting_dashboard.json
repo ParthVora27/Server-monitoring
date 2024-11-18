@@ -1,0 +1,37 @@
+{
+  "variables": [],
+  "widgets": [
+    {
+      "height": 8,
+      "width": 11,
+      "y": 0,
+      "x": 1,
+      "type": "custom",
+      "properties": {
+        "endpoint": "${pfg-iaas-server-cw-metric-report-generator-lambda}",
+        "updateOn": {
+          "refresh": false,
+          "resize": false,
+          "timeRange": false
+        },
+        "title": ""
+      }
+    },
+    {
+      "height": 8,
+      "width": 10,
+      "y": 0,
+      "x": 13,
+      "type": "custom",
+      "properties": {
+        "endpoint": "${pfg-iaas-server-cw-alarm-report-lambda}",
+        "updateOn": {
+          "refresh": false,
+          "resize": false,
+          "timeRange": false
+        },
+        "title": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+[
+  {
+    "title": "CPUUtilization",
+    "metric_name": "CPUUtilization",
+    "namespace": "AWS/EC2",
+    "threshold": 95.0,
+    "period": 300,
+    "stat": "Average",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "NetworkIn",
+    "metric_name": "NetworkIn",
+    "namespace": "AWS/EC2",
+    "threshold": 5000000,
+    "period": 300,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "NetworkOut",
+    "metric_name": "NetworkOut",
+    "namespace": "AWS/EC2",
+    "threshold": 5000000,
+    "period": 300,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "StatusCheckFailed",
+    "metric_name": "StatusCheckFailed",
+    "namespace": "AWS/EC2",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "StatusCheckFailed_Instance",
+    "metric_name": "StatusCheckFailed_Instance",
+    "namespace": "AWS/EC2",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "StatusCheckFailed_System",
+    "metric_name": "StatusCheckFailed_System",
+    "namespace": "AWS/EC2",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "Paging-linux",
+    "metric_name": "swap_used_percent",
+    "namespace": "CWAgent",
+    "threshold": 50000000,
+    "period": 60,
+    "stat": "Average",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "Memory-linux",
+    "metric_name": "mem_used_percent",
+    "namespace": "CWAgent",
+    "threshold": 95,
+    "period": 300,
+    "stat": "Average",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "Disk/Filesystem-linux",
+    "metric_name": "disk_used_percent",
+    "namespace": "CWAgent",
+    "threshold": 90,
+    "period": 300,
+    "stat": "Average",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "Disk IO write-linux",
+    "metric_name": "diskio_write_bytes",
+    "namespace": "CWAgent",
+    "threshold": 5000000,
+    "period": 60,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "Disk IO read-linux",
+    "metric_name": "diskio_read_bytes",
+    "namespace": "CWAgent",
+    "threshold": 5000000,
+    "period": 60,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux"
+  },
+  {
+    "title": "cloudwatch agent-linux",
+    "metric_name": "procstat_memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "linux",
+    "dimensions": [
+      {
+        "name": "exe",
+        "value": "amazon-cloudwatch-agent"
+      },
+      {
+        "name": "process_name",
+        "value": "amazon-cloudwatch-agent"
+      }
+    ]
+  },
+  {
+    "title": "ssm agent-linux",
+    "metric_name": "procstat_memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "linux",
+    "dimensions": [
+      {
+        "name": "exe",
+        "value": "amazon-ssm-agent"
+      },
+      {
+        "name": "process_name",
+        "value": "amazon-ssm-agent"
+      }
+    ]
+  },
+  {
+    "title": "falcon-sensor-linux",
+    "metric_name": "procstat_memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "linux",
+    "dimensions": [
+      {
+        "name": "pidfile",
+        "value": "/var/run/falcon-sensor.pid"
+      },
+      {
+        "name": "process_name",
+        "value": "falcon-sensor-bpf"
+      }
+    ]
+  },
+  {
+    "title": "chronyd",
+    "metric_name": "procstat_memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "linux",
+    "dimensions": [
+      {
+        "name": "pidfile",
+        "value": "/var/run/chrony/chronyd.pid"
+      },
+      {
+        "name": "process_name",
+        "value": "chronyd"
+      }
+    ]
+  },
+  {
+    "title": "autofs",
+    "metric_name": "procstat_memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "linux",
+    "dimensions": [
+      {
+        "name": "exe",
+        "value": "automount"
+      },
+      {
+        "name": "process_name",
+        "value": "automount"
+      }
+    ]
+  },
+  {
+    "title": "EC2HeartBeatService",
+    "metric_name": "ec2_heartbeat_service",
+    "namespace": "EC2HeartBeatService",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Maximum",
+    "datapoints": 1,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "linux",
+    "TreatMissingData": "ignore"
+  }
+]

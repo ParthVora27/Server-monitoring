@@ -1,0 +1,82 @@
+{
+  "widgets": [
+    {
+      "height": 8,
+      "width": 15,
+      "y": 0,
+      "x": 0,
+      "type": "custom",
+      "properties": {
+        "endpoint": "arn:aws:lambda:us-east-1:009160073638:function:pfg-iaas-server-custom-widget-alarm-summary-lambda",
+        "updateOn": {
+          "refresh": false,
+          "resize": false,
+          "timeRange": false
+        },
+        "params": {
+          "region": "us-east-1"
+        },
+        "title": "us-east-1 Alarm Summary"
+      }
+    },
+    {
+      "height": 8,
+      "width": 9,
+      "y": 0,
+      "x": 15,
+      "type": "custom",
+      "properties": {
+        "endpoint": "arn:aws:lambda:us-east-1:009160073638:function:pfg-iaas-server-custom-widget-ec2-monitoring-summary-lambda",
+        "updateOn": {
+          "refresh": false,
+          "resize": false,
+          "timeRange": false
+        },
+        "params": {
+          "region": "us-east-1",
+          "accountId": "${accountId}"
+        },
+        "title": "us-east-1 Monitoring Summary"
+      }
+    },
+    {
+      "height": 8,
+      "width": 15,
+      "y": 8,
+      "x": 0,
+      "type": "custom",
+      "properties": {
+        "endpoint": "arn:aws:lambda:us-west-2:009160073638:function:pfg-iaas-server-custom-widget-alarm-summary-lambda",
+        "updateOn": {
+          "refresh": false,
+          "resize": false,
+          "timeRange": false
+        },
+        "params": {
+          "region": "us-west-2"
+        },
+        "title": "us-west-2 Alarm Summary"
+      }
+    },
+    {
+      "height": 8,
+      "width": 9,
+      "y": 8,
+      "x": 15,
+      "type": "custom",
+      "properties": {
+        "endpoint": "arn:aws:lambda:us-west-2:009160073638:function:pfg-iaas-server-custom-widget-ec2-monitoring-summary-lambda",
+        "updateOn": {
+          "refresh": false,
+          "resize": false,
+          "timeRange": false
+        },
+        "params": {
+          "region": "us-west-2",
+          "accountId": "${accountId}"
+        },
+        "title": "us-west-2 Monitoring Summary"
+      }
+    }
+  ]
+}

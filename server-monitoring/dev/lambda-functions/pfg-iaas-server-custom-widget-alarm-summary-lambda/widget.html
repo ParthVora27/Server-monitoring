@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CloudWatch Alarms</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      .alarm-select {
+        width: 100%;
+        box-sizing: border-box; /* Ensure padding is included in the width */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Alarm State</th>
+          <th>Count</th>
+          <th>Alarms</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alarm</td>
+          <td>{{in_alarm_count}}</td>
+          <td>{{in_alarm_name}}</td>
+        </tr>
+        <tr>
+          <td>Ok</td>
+          <td>{{ok_alarm_count}}</td>
+          <td>{{ok_alarm_name}}</td>
+        </tr>
+        <tr>
+          <td>Insufficient</td>
+          <td>{{insufficient_data_alarm_count}}</td>
+          <td>{{insufficient_data_alarm_name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head></head>-->
+<!--<body>-->
+
+<!--<table>-->
+<!--    <tr>-->
+<!--        <th>Alarm State</th>-->
+<!--        <th>Count</th>-->
+<!--        <th>Alarms</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Alarm</td>-->
+<!--        <td>{{in_alarm_count}}</td>-->
+<!--        <td>-->
+<!--            <select id="dropdown_1">-->
+<!--                {{in_alarm_name}}-->
+<!--            </select>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Ok</td>-->
+<!--        <td>{{ok_alarm_count}}</td>-->
+<!--        <td>-->
+<!--            <select id="dropdown_2">-->
+<!--                {{ok_alarm_name}}-->
+<!--            </select>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Insufficient</td>-->
+<!--        <td>{{insufficient_data_alarm_count}}</td>-->
+<!--        <td>-->
+<!--            <select id="dropdown_3">-->
+<!--                {{insufficient_data_alarm_name}}-->
+<!--            </select>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--</body>-->
+<!--</html>-->

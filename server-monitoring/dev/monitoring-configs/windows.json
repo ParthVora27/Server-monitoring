@@ -1,0 +1,198 @@
+[
+  {
+    "title": "CPUUtilization",
+    "metric_name": "CPUUtilization",
+    "namespace": "AWS/EC2",
+    "threshold": 95.0,
+    "period": 300,
+    "stat": "Average",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "NetworkIn",
+    "metric_name": "NetworkIn",
+    "namespace": "AWS/EC2",
+    "threshold": 5000000,
+    "period": 300,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "NetworkOut",
+    "metric_name": "NetworkOut",
+    "namespace": "AWS/EC2",
+    "threshold": 5000000,
+    "period": 300,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "StatusCheckFailed",
+    "metric_name": "StatusCheckFailed",
+    "namespace": "AWS/EC2",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "StatusCheckFailed_Instance",
+    "metric_name": "StatusCheckFailed_Instance",
+    "namespace": "AWS/EC2",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "StatusCheckFailed_System",
+    "metric_name": "StatusCheckFailed_System",
+    "namespace": "AWS/EC2",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "Paging-Windows",
+    "metric_name": "Paging File % Usage",
+    "namespace": "CWAgent",
+    "threshold": 50000000,
+    "period": 60,
+    "stat": "Average",
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "datapoints": 3,
+    "platform": "windows"
+  },
+  {
+    "title": "Memory-Available-Bytes",
+    "metric_name": "Memory Available Bytes",
+    "namespace": "CWAgent",
+    "threshold": 500000000,
+    "period": 300,
+    "stat": "Average",
+    "datapoints": 3,
+    "comparisonOperator": "LessThanThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "Disk/Filesystem-Window",
+    "metric_name": "LogicalDisk % Free Space",
+    "namespace": "CWAgent",
+    "threshold": 10,
+    "period": 300,
+    "stat": "Average",
+    "datapoints": 3,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "Disk IO write-Windows",
+    "metric_name": "PhysicalDisk Disk Write Bytes/sec",
+    "namespace": "CWAgent",
+    "threshold": 5000000,
+    "period": 60,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "Disk IO read-Window",
+    "metric_name": "PhysicalDisk Disk Read Bytes/sec",
+    "namespace": "CWAgent",
+    "threshold": 5000000,
+    "period": 60,
+    "stat": "Sum",
+    "datapoints": 3,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows"
+  },
+  {
+    "title": "cloudwatch agent-Windows",
+    "metric_name": "procstat memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "windows",
+    "dimensions": [
+      {
+        "name": "exe",
+        "value": "amazon-cloudwatch-agent"
+      },
+      {
+        "name": "process_name",
+        "value": "amazon-cloudwatch-agent.exe"
+      }
+    ]
+  },
+  {
+    "title": "ssm agent-Windows",
+    "metric_name": "procstat memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "windows",
+    "dimensions": [
+      {
+        "name": "exe",
+        "value": "amazon-ssm-agent"
+      },
+      {
+        "name": "process_name",
+        "value": "amazon-ssm-agent.exe"
+      }
+    ]
+  },
+  {
+    "title": "CSFalconService-windows",
+    "metric_name": "procstat memory_rss",
+    "namespace": "CWAgent",
+    "threshold": 0,
+    "period": 10,
+    "stat": "Average",
+    "datapoints": 6,
+    "comparisonOperator": "LessThanOrEqualToThreshold",
+    "platform": "windows",
+    "dimensions": [
+      {
+        "name": "exe",
+        "value": "CSFalconService"
+      },
+      {
+        "name": "process_name",
+        "value": "CSFalconService.exe"
+      }
+    ]
+  },
+  {
+    "title": "EC2HeartBeatService",
+    "metric_name": "ec2_heartbeat_service",
+    "namespace": "EC2HeartBeatService",
+    "threshold": 1,
+    "period": 60,
+    "stat": "Maximum",
+    "datapoints": 1,
+    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+    "platform": "windows",
+    "TreatMissingData": "ignore"
+  }
+]

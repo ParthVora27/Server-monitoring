@@ -1,0 +1,354 @@
+{
+  "widgets": [
+    {
+      "height": 6,
+      "width": 12,
+      "y": 0,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-monitoring-ec2-on-offboarding-lambda",
+            { "region": "us-east-1" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-east-1" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "us-east-1 EC2 on-off Boarding Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 0,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-monitoring-ec2-on-offboarding-lambda",
+            { "region": "us-west-2" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-west-2" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "title": "us-west-2 EC2 on-off Boarding Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 6,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-resource-generator-lambda",
+            { "region": "us-east-1" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-east-1" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "us-east-1 Resource Generator Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 6,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-resource-generator-lambda",
+            { "region": "us-west-2" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-west-2" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "title": "us-west-2 Resource Generator Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 30,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-cw-metric-report-generator-lambda",
+            { "region": "us-east-1" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-east-1" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "us-east-1 Metric Report Generator Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 30,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-cw-metric-report-generator-lambda",
+            { "region": "us-west-2" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-west-2" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "title": "us-west-2 Metric Report Generator Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 36,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-cw-alarm-report-lambda",
+            { "region": "us-east-1" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-east-1" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "us-east-1 Alarm Report Generator Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 36,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-cw-alarm-report-lambda",
+            { "region": "us-west-2" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-west-2" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "title": "us-west-2 Alarm Report Generator Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 12,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-cw-metric-sqs-event-lambda",
+            { "region": "us-east-1" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-east-1" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "us-east-1 Metric SQS Event Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 12,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-cw-metric-sqs-event-lambda",
+            { "region": "us-west-2" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-west-2" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "title": "us-west-2 Metric SQS Event Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 18,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-monitoring-summary-lambda",
+            { "region": "us-east-1" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-east-1" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "us-east-1 Monitoring Summary Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 18,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-monitoring-summary-lambda",
+            { "region": "us-west-2" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-west-2" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "title": "us-west-2 Monitoring Summary Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 24,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-custom-widget-alarm-summary-function",
+            { "region": "us-east-1" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-east-1" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "us-east-1 Alarm Summary Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 24,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "pfg-iaas-server-custom-widget-alarm-summary-function",
+            { "region": "us-west-2" }
+          ],
+          [".", "Errors", ".", ".", { "region": "us-west-2" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "title": "us-west-2 Alarm Summary Lambda",
+        "period": 300,
+        "stat": "Maximum"
+      }
+    }
+  ]
+}
